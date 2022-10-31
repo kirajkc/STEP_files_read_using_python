@@ -1,24 +1,6 @@
 from steputils import p21
 
 FNAME = r'C:\Users\Karan\Downloads\STEP\step_files\TRIQBRIQ_300_Balken_1.STEP'
-
-# # Create a new STEP-file:
-# stepfile = p21.new_step_file()
-
-# # Create a new data section:
-# data = stepfile.new_data_section()
-
-# # Add entity instances to data section:
-# data.add(p21.simple_instance('#1', name='APPLICATION', params=('MyApp', 'v1.0')))
-
-# # Set required header entities:
-# stepfile.header.set_file_description(('Example STEP file', 'v1.0'))
-# stepfile.header.set_file_name(name=FNAME, organization=('me', 'myself'), autorization='me')
-# stepfile.header.set_file_schema(('NONE',))
-
-# Write STEP-file to file system:
-# stepfile.save(FNAME)
-
 # Read an existing file from file system:
 try:
     stepfile = p21.readfile(FNAME)
